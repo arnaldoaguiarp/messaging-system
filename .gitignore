@@ -1,0 +1,51 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files (except templates).
+/.env*
+!/.env*.erb
+
+# Logs e arquivos temporários do Rails
+/log/*
+/tmp/*
+/storage/*
+!/log/.keep
+!/tmp/.keep
+!/storage/.keep
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore pidfiles, but keep the directory
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage (uploaded files in development and any SQLite databases)
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (frontend)
+/node_modules
+
+# Frontend build files
+/dist
+.vercel
+
+# RuboCop files
+.rubocop-https---gems-rubocop-org-RuboCop-Version.txt
+
+# Other
+/public/assets
+.byebug_history
