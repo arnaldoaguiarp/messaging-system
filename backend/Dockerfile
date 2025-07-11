@@ -1,7 +1,6 @@
 FROM ruby:3.4.4
 
 ENV RAILS_ENV=production \
-    BUNDLE_WITHOUT="development test" \
     RAILS_LOG_TO_STDOUT=true
 
 RUN apt-get update -qq && \
