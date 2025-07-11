@@ -16,6 +16,7 @@
 !/backend/tmp/.keep
 /backend/storage/*
 !/backend/storage/.keep
+/backend/.cache/
 
 # Ignore database files.
 /backend/db/*.sqlite3

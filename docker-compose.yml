@@ -33,6 +33,7 @@ services:
       - DATABASE_URL=postgres://postgres:password@db:5432/messaging_app_development
       - REDIS_URL=redis://redis:6379/1
       - RAILS_ENV=development
+      - HOME=/rails
     user: "${UID}:${GID}"
 
 volumes:
