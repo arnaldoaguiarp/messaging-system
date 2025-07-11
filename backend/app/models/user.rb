@@ -12,4 +12,10 @@ class User < ApplicationRecord
 
   validates :name, :email, presence: true
   validates :email, uniqueness: true
+
+  # Check the use role
+  # '?': safe navigation operator
+  def admin?
+    role&.name == "admin"
+  end
 end
