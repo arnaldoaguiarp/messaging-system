@@ -1,36 +1,31 @@
 # Ignore bundler config.
-/.bundle
+/backend/.bundle
 
 # Ignore all environment files (except templates).
 /.env*
 !/.env*.erb
 
-# Logs e arquivos temporários do Rails
-/log/*
-/tmp/*
-/storage/*
-!/log/.keep
-!/tmp/.keep
-!/storage/.keep
+# Backend (Rails) specific ignores
+# ===================================
+#
+# Logs, temporary files, and storage.
+# The `*` ignores all files within, and the `!` rule keeps the empty directory.
+/backend/log/*
+!/backend/log/.keep
+/backend/tmp/*
+!/backend/tmp/.keep
+/backend/storage/*
+!/backend/storage/.keep
 
-# Database
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
-# Ignore pidfiles, but keep the directory
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
-# Ignore storage (uploaded files in development and any SQLite databases)
-/storage/*
-!/storage/.keep
-/tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
+# Ignore database files.
+/backend/db/*.sqlite3
+/backend/db/*.sqlite3-journal
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+/backend/config/master.key
+
+# Ignore generated assets folder
+/backend/public/assets
 
 # Operating system files
 .DS_Store
@@ -44,8 +39,7 @@ Thumbs.db
 .vercel
 
 # RuboCop files
-.rubocop-https---gems-rubocop-org-RuboCop-Version.txt
+/backend/.rubocop-https---*
 
 # Other
-/public/assets
 .byebug_history

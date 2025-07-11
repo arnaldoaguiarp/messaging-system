@@ -26,6 +26,7 @@ group :development, :test do
   gem "faker"
   gem "rswag-api"
   gem "rswag-specs"
+  gem "brakeman", require: false
 end
 
 group :development do
